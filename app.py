@@ -7,12 +7,13 @@ from flask import Flask
 
 # app name -------------------------------------------------
 app = Flask(__name__)
-from GNI import GniDyn
+
 
 # routing --------------------------------------------------
 @app.route('/')
 def startApp():
     #from GNI import GniDyn
+    from GNI import GniDyn
     print('Returning now...')
     return True
     pass
